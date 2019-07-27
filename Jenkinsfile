@@ -9,7 +9,7 @@ pipeline {
     stage ('Build Docker image') {
       steps {
         sh '''
-        docker build --rm -t foo .
+        sudo docker build --rm -t foo .
         '''
       }
     }
